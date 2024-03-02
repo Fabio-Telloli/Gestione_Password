@@ -1,9 +1,22 @@
 public class Utente {
-    String email;
-    String pass;
+    private String email;
+    private String password;
 
-    Utente(String email, String pass) {
+    public Utente(String email, String password) {
         this.email = email;
-        this.pass = pass;
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String toString() {
+        return "Email: " + email + ", Password: " + password;
     }
 }
